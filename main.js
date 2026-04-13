@@ -94,9 +94,8 @@ timelineItems.forEach(item => {
 });
 
 // tsParticles Initialization for AI Background
-window.addEventListener("load", () => {
-  if (typeof tsParticles !== "undefined") {
-    tsParticles.load("tsparticles", {
+if (typeof tsParticles !== 'undefined') {
+  tsParticles.load("tsparticles", {
     fpsLimit: 60,
     interactivity: {
       events: {

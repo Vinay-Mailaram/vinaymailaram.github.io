@@ -1,15 +1,10 @@
 :root {
   --bg-color: #030014;
-  --surface-color: rgba(10, 10, 30, 0.4);
-  --card-bg: rgba(15, 15, 40, 0.5);
   --primary-accent: #00f0ff;
   --secondary-accent: #b026ff;
   --text-main: #f0f4f8;
   --text-muted: #94a3b8;
-  --border-light: rgba(255, 255, 255, 0.08);
-  --header-height: 80px;
-  --font-main: 'Inter', sans-serif;
-  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --border-light: rgba(255, 255, 0.88);
 }
 
 * {

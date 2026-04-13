@@ -1,32 +1,21 @@
-// Mobile Menu
-const mobileBtn = document.querySelector('.mobile-menu-btn');
-const nav = document.querySelector('.nav-links');
-
-mobileBtn?.addEventListener('click', () => {
-    nav.classList.toggle('active');
-});
-
-// Smooth Scroll for Nav Links
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+// Simple Scroll logic
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', (e) => {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-            nav.classList.remove('active');
-        }
+        const target = document.querySelector(link.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
     });
 });
 
-// tsParticles AI Background Initialization
+// Particles init
 if (window.tsParticles) {
     tsParticles.load("tsparticles", {
         particles: {
-            number: { value: 50 },
+            number: { value: 40 },
             color: { value: "#00FFFF" },
-            links: { enable: true, color: "#00FFFF", opacity: 0.2 },
+            links: { enable: true, color: "#00FFFF", opacity: 0.1 },
             move: { enable: true, speed: 1 },
-            size: { value: 2 }
+            size: { value: 1.5 }
         }
     });
 }
